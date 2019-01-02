@@ -11,7 +11,7 @@ client.on('message', function(message) {
                 if(message.author.id !== myID) return;
             if(!args) return message.reply('اكتبي الحالة الي تريديها يا اسطورة يا روان');
         client.user.setUsername(args);
-        message.channel.send('**تم يا اسطورة يا روان تغيرت اسمكي <3**').then(msg => {
+        message.channel.send('**تم يا اسطورة يا روان تغيرت اسمكي**').then(msg => {
            msg.delete(5000);
           message.delete(5000);
         });
